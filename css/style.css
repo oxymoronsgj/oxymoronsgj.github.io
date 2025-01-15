@@ -308,8 +308,8 @@ a {
     position: relative;
     width: 100%;
     max-width: 1000px; /* Maximum width for larger screens */
-    margin: 0 auto; /* Center the video */
-    padding-top: 56.25%; /* Aspect ratio: 16:9 */
+    margin: 0 auto; /* Centers the video horizontally */
+    padding-top: 56.25%; /* Maintains 16:9 aspect ratio */
 }
 
 .video-container iframe {
@@ -320,10 +320,11 @@ a {
     height: 100%;
 }
 
-/* Media Query for Mobile Screens */
+/* Center the container and handle mobile screens */
 @media (max-width: 768px) {
     .video-container {
-        max-width: 100%; /* Allow video to use the full width */
-        padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+        max-width: 90%; /* Slightly smaller on mobile for better fit */
+        margin: 0 auto; /* Keeps it centered */
     }
 }
+
