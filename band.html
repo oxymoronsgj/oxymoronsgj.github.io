@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Boyz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;  
+  background-image: url("images/background.jpg"), radial-gradient(white, black);
+  background-repeat: no-repeat;
+  background-size: 100%;    
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar black card">
+    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="bar-item button padding-large">HOME</a>
+    <a href="band.html" class="bar-item button padding-large hide-small">BAND</a>
+    <a href="shows.html" class="bar-item button padding-large hide-small">SHOWS</a>
+    <a href="contact.html" class="bar-item button padding-large hide-small">CONTACT</a>
+    
+    
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
+  <a href="band.html" class="bar-item button padding-large" onclick="myFunction()">BAND</a>
+  <a href="shows.html" class="bar-item button padding-large" onclick="myFunction()">SHOWS</a>
+  <a href="contact.html" class="bar-item button padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Page content -->
+<div class="container content center padding-64" style="max-width:800px" id="band">
+    <h1 class="content"><i>Meet The Boyz!</i></h1>
+    <h5 class="center">We are a fun loving family of goofballs ready to rock each and every one of your socks off, respectively.</h5>
+    <h5 class="center">Twice voted third best local band by the Daily Sentinel's Best of the West!</h5>
+    <div class="row padding-32">
+      <div style="width: 25%; display: inline-block;">
+        <p>Peter</p>
+        <img src="images/Peter.jpg" class="round margin-bottom" alt="Peter" style="width:75%">
+        <p>Bass and Vocals</p>
+      </div>
+      <div style="width: 25%; display: inline-block;">
+        <p>Paul</p>
+        <img src="images/Paul.jpg" class="round margin-bottom" alt="Paul" style="width:75%">
+        <p>Guitar and Vocals</p>
+      </div>
+      <div style="width: 25%; display: inline-block;">
+        <p>Jon</p>
+        <img src="images/Jon.jpg" class="round margin-bottom" alt="Jon" style="width:75%">
+        <p>Aux Percussion and Vocals</p> 
+      </div>
+      <div style="width: 25%; display: inline-block;">
+        <p>Brad</p>
+        <img src="images/Brad.jpg" class="round margin-bottom" alt="Brad" style="width:75%">
+        <p>Keyboards and Mandolin</p>
+      </div>
+      <div style="width: 25%; display: inline-block;">
+        <p>David</p>
+        <img src="images/David.jpg" class="round margin-bottom" alt="David" style="width:75%">
+        <p>Drums</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="container padding-64 center opacity light-grey xlarge">
+    <a href="https://www.facebook.com/oxymoronsgj/" target="_blank">
+        <i class="fa fa-facebook-official hover-opacity">CHECK OUT OUR FACEBOOK</i>
+    </a>
+  </footer>
+  
+  <script>
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+      x.className += " show";
+    } else { 
+      x.className = x.className.replace(" show", "");
+    }
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  </body>
+  </html>
+  
