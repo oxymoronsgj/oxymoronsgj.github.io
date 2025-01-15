@@ -304,3 +304,26 @@ a {
     
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the video */
+    padding-top: 56.25%; /* Aspect ratio: 16:9 */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%; /* Allow video to use the full width */
+        padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+    }
+}
