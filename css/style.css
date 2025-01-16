@@ -307,7 +307,7 @@ a {
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Maximum width for larger screens */
+    max-width: 1000px; /* Maximum width for larger screens */
     margin: 0 auto; /* Centers the video horizontally */
     padding-top: 56.25%; /* Maintains 16:9 aspect ratio */
 }
